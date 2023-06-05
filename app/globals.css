@@ -65,6 +65,7 @@ a:hover {
 
 .page-title h1 {
   font-size: 3rem;
+  line-height: 3.25rem;
   font-weight: 800;
 }
 
@@ -216,6 +217,7 @@ section.info {
 .info-section {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -255,6 +257,10 @@ section.info {
 
 .spec-subsection {
   flex: 1;
+}
+
+.services-container {
+  margin-top: 2rem;
 }
 
 .work-fields {
@@ -413,6 +419,69 @@ ul.text-block-description li ul {
 }
 
 @media screen and (max-width: 1024px) {
+  .body-wrapper {
+    margin-top: 6rem;
+    min-height: calc(100vh - 14rem);
+  }
+
+  .page-title,
+  .page-descriptor {
+    padding-right: 0;
+  }
+
+  .hero-title {
+    padding-top: 2rem;
+  }
+
+  .hero-title-content {
+    padding: 0;
+  }
+
+  .hero-title h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.2rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    transform: translateY(110%);
+    animation: slide 0.75s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  .hero-title h1 b {
+    letter-spacing: -0.1rem;
+  }
+
+  .hero-subtitle {
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-button {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hero-button.download-pdf-button {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .quantity-section {
+    margin: 1rem;
+    margin-left: 0;
+  }
+
+  .quantity-section p.large {
+    font-size: 6rem;
+    margin: -1.5rem 0;
+    letter-spacing: -0.4rem;
+  }
+
+  .workfield h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   .yandex-map {
     padding: 0;
   }

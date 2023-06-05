@@ -10,6 +10,9 @@ module.exports = {
       'hero': 'calc(100vh - 4.5rem)',
     },
     extend: {
+      colors: {
+        'background-color': '#f5f5f5',
+      },
       textColor: {
         "secondary-color": "#E62E59",
       },

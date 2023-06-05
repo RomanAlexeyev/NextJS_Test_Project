@@ -71,12 +71,12 @@ export default function AboutCompany() {
             return (
               <div
                 key={detail.code}
-                className="mb-4 flex items-center font-medium text-xl"
+                className="mb-4 flex flex-wrap items-center font-medium text-xl"
               >
                 <div className="basis-60 text-gray-400">
                   {detail.displayName}
                 </div>
-                <div className="grow">{detail.value}</div>
+                <div className="grow whitespace-nowrap">{detail.value}</div>
               </div>
             );
           })}
@@ -87,12 +87,12 @@ export default function AboutCompany() {
             return (
               <div
                 key={detail.code}
-                className="mb-4 flex items-center font-medium text-xl"
+                className="mb-4 flex flex-wrap items-center font-medium text-xl"
               >
                 <div className="basis-60 text-gray-400">
                   {detail.displayName}
                 </div>
-                <div className="grow">{detail.value}</div>
+                <div className="grow whitespace-nowrap">{detail.value}</div>
               </div>
             );
           })}

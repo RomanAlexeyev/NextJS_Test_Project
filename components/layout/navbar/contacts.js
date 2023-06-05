@@ -38,7 +38,7 @@ export default function Contacts({ isMobile }) {
       </span>
       {popupActive && (
         <div
-          className={`absolute top-10 bg-inherit py-2 px-3 rounded-lg overflow-hidden shadow-lg ${
+          className={`absolute top-10 bg-background-color py-2 px-3 rounded-lg overflow-hidden shadow-lg ${
             isMobile ? "left-2/4 -translate-x-2/4" : "right-0"
           }`}
         >

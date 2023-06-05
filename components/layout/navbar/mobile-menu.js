@@ -31,7 +31,7 @@ export default function MobileMenu({ navLinks }) {
         />
       </div>
       {isOpen && (
-        <ul className="absolute top-10 left-0 w-full bg-gray-100 flex flex-col items-center mt-5 z-60 py-3">
+        <ul className="absolute top-10 left-0 w-full bg-background-color flex flex-col items-center mt-5 z-60 py-3">
           {navLinks.map((link) => (
             <li key={link.id}>
               <Link href={link.path} className="py-3 font-medium align-center" onClick={() => setIsOpen(false)}>
