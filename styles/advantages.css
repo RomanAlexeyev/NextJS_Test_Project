@@ -1,0 +1,67 @@
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.advantage-section {
+  flex: 1 0 26%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 3rem;
+  margin-left: 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.advantage-section.big {
+  flex: 1 0 40%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 3rem;
+  margin-left: 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.advantage-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 0%;
+  width: 3px;
+  background-color: var(--text-color);
+}
+
+.advantage-section.in-view::before {
+  animation: grow 0.3s ease forwards;
+}
+
+.advantage-section-title,
+.advantage-section-description {
+  overflow: hidden;
+}
+
+.advantage-section-description {
+  margin-top: 1rem;
+}
+
+.advantage-section-title h3 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  transform: translateX(-100%);
+}
+
+.advantage-section.in-view .advantage-section-title h3 {
+  animation: slide 0.7s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.advantage-section-description p {
+  transform: translateY(-100%);
+}
+
+.advantage-section.in-view .advantage-section-description p {
+  animation: slide 0.4s ease-out forwards;
+  animation-delay: 0.4s;
+}

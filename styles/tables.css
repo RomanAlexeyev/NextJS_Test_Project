@@ -1,0 +1,81 @@
+.outstaff-prices-container {
+  margin: 1rem 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--text-color);
+}
+.outstaff-prices-container.is-open {
+  overflow-x: auto;
+}
+
+.outstaff-prices-table {
+  min-width: 1200px;
+}
+
+.column-title {
+  transform: translateX(-8rem);
+  opacity: 0;
+  animation: slide 0.3s ease forwards;
+}
+
+.column-title:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.column-title:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.column-title:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.outstaff-prices-table-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+  align-items: center;
+  padding: 1rem 0;
+}
+.outstaff-prices-table-row.description {
+  padding-bottom: 0.5rem;
+}
+
+.outstaff-prices-table-row:not(.table-header) {
+  transform: translateY(-3rem);
+  opacity: 0;
+  animation: slide 0.3s ease forwards;
+}
+.outstaff-prices-table-row:not(.table-header):nth-child(2) {
+  animation-delay: 0.1s;
+}
+.outstaff-prices-table-row:not(.table-header):nth-child(3) {
+  animation-delay: 0.2s;
+}
+.outstaff-prices-table-row:not(.table-header):nth-child(4) {
+  animation-delay: 0.3s;
+}
+.outstaff-prices-table-row:not(.table-header):nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.table-title {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.table-title h4 {
+  transition: color 0.3s ease;
+}
+.table-title:hover > h4 {
+  color: var(--secondary-color);
+}
+
+.column-title {
+  font-size: 1.25rem;
+}
+
+.description-title {
+  color: var(--dark-grey-color);
+}
+
+.prices-table-cell {
+  font-size: 1.25rem;
+}
