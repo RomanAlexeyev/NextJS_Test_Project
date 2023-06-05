@@ -29,8 +29,8 @@
   height: 3rem;
   width: 100%;
   position: sticky;
+  left: 0;
   top: 0;
-  right: -2rem;
   background-color: inherit;
   flex-shrink: 0;
 }
@@ -40,7 +40,6 @@
   top: 0;
   right: 0;
   margin: 1.5rem;
-  height: 30%;
   cursor: pointer;
 }
 
@@ -75,7 +74,6 @@
 .input-block {
   display: flex;
   flex-direction: column;
-  /* margin-top: -0.75rem; */
 }
 
 .input-block.name-block {
@@ -109,10 +107,6 @@ textarea {
   font-size: 1rem;
   font-weight: 500;
 }
-
-/* .slider-container {
-    margin-top: 1rem;
-} */
 
 .slider-range {
   display: flex;
@@ -196,6 +190,8 @@ textarea {
 .modal-section.buttons-block {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 .modal-section.buttons-block .file-input {
   display: none;
@@ -207,6 +203,9 @@ textarea {
   color: white;
   font-weight: 500;
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-section.buttons-block button.attach-button {
@@ -266,12 +265,6 @@ textarea {
 @media screen and (max-width: 1024px) {
   .modal {
     width: 85vw;
-    /* font-size: 0.75rem; */
-    /* padding: 1.5rem; */
-  }
-
-  .close-button {
-    margin: -1rem 1rem 1rem;
   }
 
   .modal-section {
@@ -287,21 +280,7 @@ textarea {
       "phone";
   }
 
-  .modal-section.buttons-block button {
-    font-size: 0.85rem;
-    padding: 0.85rem 1.25rem;
-  }
-
-  .attach-button img {
-    /* width: 1rem; */
-    margin-left: -0.25rem;
-    margin-right: 0.25rem;
-    /* margin-top: 0; */
-  }
-
-  textarea,
-  input,
-  ::placeholder {
-    font-size: 0.75rem;
+  .buttons-block button {
+    width: 100%;
   }
 }

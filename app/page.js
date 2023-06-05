@@ -8,7 +8,7 @@ import Portfolio from "@/components/sections/portfolio";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col items-center relative h-screen">
+      <section className="flex flex-col items-center relative hero-section">
         <Image
           src="/images/company_logo_min_large.svg"
           width={500}

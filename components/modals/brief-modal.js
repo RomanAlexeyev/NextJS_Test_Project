@@ -147,7 +147,7 @@ export default function BriefModal({ onClose }) {
     <div className="page-mask">
       <div className="modal brief-modal">
         <div className="close-button" onClick={onClose}>
-          <Image src="/images/times_icon.svg" alt="" width={20} height={20} />
+          <Image src="/images/times_icon.svg" alt="" width={15} height={15} />
         </div>
         <div className="modal-content">
           {successMessage ? (
